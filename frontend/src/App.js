@@ -1,24 +1,25 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
+
 import AddBook from './components/BookManagement/AddBook';
 import UpdateBook from './components/BookManagement/UpdateBook';
-import DeleteBook from './components/BookManagement/DeleteBook';
+import DeleteBook from './components/BookManagement/DeleteBook'
 import SearchBooks from './components/BookManagement/SearchBooks';
-import Register from './components/UserMangement/Register';
-import Login from './components/UserMangement/Login';
-import ChangePassword from './components/UserMangement/ChangePassword';
+import Register from './components/UserMangement/Register'
+import Login from './components/UserMangement/Login'
+import ChangePassword from './components/UserMangement/ChangePassword'
 import Profile from './components/UserMangement/Profile';
-import ReserveBook from './components/ReservationMangement/ReserveBook';
-import CancelReservation from './components/ReservationMangement/CancelReservation';
-import Notifications from './components/NotificationMangement/Notification';
-import BorrowBook from './components/BorrowingMangement/BorrowBook';
-import ReturnBook from './components/BorrowingMangement/ReturnBook';
-import OverdueBooks from './components/BorrowingMangement/OverdueBooks';
-import Navigation from './components/Navigation';
-import Homepage from './pages/Homepage';
-import ViewReservations from './components/ReservationMangement/ViewReservation';
-import UserReservations from './components/ReservationMangement/UserResrvation';
+import ReserveBook from './components/ReservationMangement/ReserveBook'
+import CancelReservation from './components/ReservationMangement/CancelReservation'
+import Notifications from './components/NotificationMangement/Notification'
+import BorrowBook from './components/BorrowingMangement/BorrowBook'
+import ReturnBook from './components/BorrowingMangement/ReturnBook'
+import OverdueBooks from './components/BorrowingMangement/OverdueBooks'
+import Navigation from './components/Navigation'
+import Homepage from './pages/Homepage'
+import ViewReservations from './components/ReservationMangement/ViewReservation'
+import UserReservations from './components/ReservationMangement/UserResrvation'
 import { ProtectedAdminDashboard, ProtectedUserDashboard } from './components/UserMangement/ProtectedRoutes';
 
 const App = () => {
