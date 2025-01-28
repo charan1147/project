@@ -1,0 +1,54 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: darkslategray;
+}
+
+.alert {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alert-success {
+  color: seagreen;
+  background-color: honeydew;
+  border-color: palegreen;
+}
+
+.alert-error {
+  color: firebrick;
+  background-color: mistyrose;
+  border-color: lightcoral;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 18px;
+  color: darkslategray;
+}
+
+.reservation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-item {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: white;
+}
