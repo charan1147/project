@@ -20,7 +20,9 @@ import Navigation from './components/Navigation'
 import Homepage from './pages/Homepage'
 import ViewReservations from './components/ReservationMangement/ViewReservation'
 import UserReservations from './components/ReservationMangement/UserResrvation'
-import { ProtectedAdminDashboard, ProtectedUserDashboard } from './components/UserMangement/ProtectedRoutes';
+// import { ProtectedAdminDashboard, ProtectedUserDashboard } from './components/UserMangement/ProtectedRoutes';
+import UserDashboard from './pages/User';
+import AdminDashboard from './pages/Admin';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -68,8 +70,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/dashboard" element={<Navigate to={isLoggedIn ? (userRole === 'admin' ? '/admin-dashboard' : '/user-dashboard') : '/login'} />} />
-          <Route path="/admin-dashboard" element={<ProtectedAdminDashboard />} />
-          <Route path="/user-dashboard" element={<ProtectedUserDashboard />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/user-dashboard" element={<UserDashboard />} />
           <Route path="/add-book" element={isLoggedIn && userRole === 'admin' ? <AddBook /> : <Navigate to="/login" />} />
           <Route path="/books/update/:id" element={isLoggedIn && userRole === 'admin' ? <UpdateBook /> : <Navigate to='/login' />} />
           <Route path="/delete-book/:id" element={isLoggedIn && userRole === 'admin' ? <DeleteBook /> : <Navigate to='/login' />} />
